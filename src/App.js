@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+
 export default function Header() {
   const dispatch = useDispatch();
   const { current, count } = useSelector((state) => {
@@ -16,7 +17,7 @@ export default function Header() {
   };
   const increase = () => {
     dispatch({
-      type: "add",
+      type: 'add',
       count,
     });
   };
